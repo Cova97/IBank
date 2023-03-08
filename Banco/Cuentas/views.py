@@ -4,11 +4,10 @@ from .models import Usuario
 
 def create_user():
     nombre = str(input('Dame un nombre: '))
-    edad = int(input('Dame una edad: '))
     correo = str(input('Dame un correo: '))
     clave = int(input('Dame una nueva clave: '))
 
-    user = Usuario(nombre, edad, correo, clave)
+    user = Usuario(nombre, correo, clave)
     print(user)
 
 
